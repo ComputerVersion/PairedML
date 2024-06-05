@@ -49,3 +49,6 @@ Please refer to the `train_numeric_feature.csv` file in the `Pair_Test_example_D
 ## Workflow Description
 Before processing, the data must first be loaded. The implementation of the data container is located in the `Container` folder under the `FAE` directory.
 The entire processing flow is implemented in the `process_pipeline.py` file in the `FAE` directory, including the training and testing processes, which are algorithmically similar, but differ in that the training process yields intermediate results and saves them, whereas the testing process loads these intermediate results and uses them directly. The implementation steps of the algorithm include normalization, dimension reduction, feature extraction, classification, and cross-validation, with each solver used in these steps located in the `FeatureAnalysis` folder.
+
+## If this work is helpful to you, please cite the following paper. Thank you!
+Zhang AD, Shi QL, Zhang HT, Duan WH, Li Y, Ruan L, Han YF, Liu ZK, Li HF, Xiao JS, Shi GF, Wan X, Wang RZ. Pairwise machine learning-based automatic diagnostic platform utilizing CT images and clinical information for predicting radiotherapy locoregional recurrence in elderly esophageal cancer patients. Abdom Radiol (NY). 2024 Jun 4. doi: 10.1007/s00261-024-04377-7. Epub ahead of print. PMID: 38831075.
